@@ -13,3 +13,31 @@
   color: white;
 }
 
+article
+{
+  min-height: 30vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 80%;
+  margin: auto;
+}
+.kep
+{
+  margin: 10px;
+}
+img
+{
+  width: 100%;
+  height: 60%;
+}
+
+section
+{
+  min-height: 30vh;
+}
+
+footer
+{
+  min-height: 10vh;
+}
+

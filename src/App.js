@@ -5,22 +5,27 @@ const kepTomb =[
   {
     id:1,
     cim: "nyuszi 1",
-    eleresiut: "./kep1.jpg",
+    eleresiut: "./kepek/kep1.jpg",
     ar: 1500
   },
   {
     id:2,
     cim: "nyuszi 2",
-    eleresiut: "./kep2.jpg",
+    eleresiut: "./kepek/kep2.jpg",
     ar: 2500
   },
   {
     id:3,
     cim: "nyuszi 3",
-    eleresiut: "./kep3.jpg",
+    eleresiut: "./kepek/kep3.jpg",
     ar: 1000
   }
 ]
+
+function kosarKezeles(adat)
+{
+  // console.log(adat);
+}
 
 function App() {
   return (
@@ -31,7 +36,11 @@ function App() {
       <article>
       {
         kepTomb.map((kep, index)=>{
-          return(<Kep kepObj={kep} key={index}/>)
+          return(<Kep
+            kepObj={kep}
+            key={index}
+            kosarKezeles={kosarKezeles}
+            />)
         })
       }
       </article>
